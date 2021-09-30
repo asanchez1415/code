@@ -16,4 +16,9 @@ router.get("/css", (req, res) => {
   res.render("css.html");
 });
 
+// LINUX
+router.get("/linux", (req, res) => {
+  res.render("linux.html");
+});
+
 module.exports = router;

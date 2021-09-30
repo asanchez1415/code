@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CODE</title>
     <%- include("partials/head.html") %>
+    <link rel="stylesheet" href="/css/linux.css" />
   </head>
-  <body class="html">
+  <body class="linux">
     <%- include("partials/navigation.html") %>
+
     <div class="container mt-4 mb-4">
       <div class="row bg-dark text-white p-5 text-center">
         <div class="col-md-6">
-          <i class="fab fa-html5 fa-10x text-danger"></i>
-          <h3>HTML5</h3>
+          <i class="fab fa-linux fa-10x"></i>
+          <h3>GNU/LINUX</h3>
         </div>
 
         <div class="col-md-6">
@@ -27,13 +29,27 @@
       </div>
 
       <div class="row bg-dark text-white p-5 text-center">
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-          <h3>Basic estructure</h3>
+        <div class="col-md-4 h-icon p-3 shadow-lg">
+          <a class="text-decoration-none text-light" href="#"
+            ><i class="fab fa-suse fa-5x text-success"></i>
+            <h3>OPENSUSE</h3></a
+          >
         </div>
-        <div class="col-md-6 h-icon p-3 bg-secondary rounded-3">
-          <p></p>
+        <div class="col-md-4 h-icon p-3 shadow-lg">
+          <a class="text-decoration-none text-light" href="#"
+            ><i class="fab fa-ubuntu fa-5x text-danger"></i>
+            <h3>UBUNTU</h3></a
+          >
+        </div>
+        <div class="col-md-4 h-icon p-3 shadow-lg">
+          <a class="text-decoration-none text-light" href="#"
+            ><i class="fab fa-fedora fa-5x text-info"></i>
+            <h3>FEDORA</h3></a
+          >
         </div>
       </div>
+
+      <%- include("components/lin-content.html") %>
     </div>
 
     <%- include("partials/footer.html") %>
